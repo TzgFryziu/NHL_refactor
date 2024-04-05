@@ -1,0 +1,1616 @@
+{
+    "standings": [
+      {
+        "tournament": {
+          "name": "NHL",
+          "slug": "nhl",
+          "category": {
+            "name": "USA",
+            "slug": "usa",
+            "sport": {
+              "name": "Ice hockey",
+              "slug": "ice-hockey",
+              "id": 4
+            },
+            "id": 37,
+            "flag": "usa",
+            "alpha2": "US"
+          },
+          "uniqueTournament": {
+            "name": "NHL",
+            "slug": "nhl",
+            "secondaryColorHex": "#808291",
+            "category": {
+              "name": "USA",
+              "slug": "usa",
+              "sport": {
+                "name": "Ice hockey",
+                "slug": "ice-hockey",
+                "id": 4
+              },
+              "id": 37,
+              "flag": "usa",
+              "alpha2": "US"
+            },
+            "userCount": 27833,
+            "hasPerformanceGraphFeature": false,
+            "id": 234,
+            "displayInverseHomeAwayTeams": true
+          },
+          "priority": 20,
+          "isLive": false,
+          "id": 142
+        },
+        "type": "total",
+        "name": "NHL",
+        "descriptions": [],
+        "tieBreakingRule": {
+          "text": "If two or more clubs are tied in points during the regular season, the standing of the clubs is determined in the following order: 1. The fewer number of games played. 2. The greater number of games won, excluding games won in Overtime or by Shootout. 3. The greater number of games won, excluding games won by Shootout. 4. The greater number of games won by the Club in any manner. 5. The greater number of points earned in games against each other among two or more tied clubs. For the purpose of determining standing for two or more Clubs that have not played an even number of games with one or more of the other tied Clubs, the first game played in the city that has the extra game (the \"odd game\") shall not be included. When more than two Clubs are tied, the percentage of available points earned in games among each other (and not including any \"odd games\") shall be used to determine standing. 6. The greater differential between goals for and against (including goals scored in Overtime or awarded for prevailing in Shootouts) for the entire regular season. 7. The greater number of goals scored (including goals scored in Overtime or awarded for prevailing in Shootouts) for the entire regular season.",
+          "id": 2196
+        },
+        "rows": [
+          {
+            "team": {
+              "name": "New York Rangers",
+              "slug": "new-york-rangers",
+              "shortName": "Rangers",
+              "gender": "M",
+              "sport": {
+                "name": "Ice hockey",
+                "slug": "ice-hockey",
+                "id": 4
+              },
+              "userCount": 12132,
+              "nameCode": "NYR",
+              "disabled": false,
+              "national": false,
+              "type": 0,
+              "id": 3701,
+              "teamColors": {
+                "primary": "#0069aa",
+                "secondary": "#d31245",
+                "text": "#d31245"
+              },
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "ar": "نيويورك رانجرس",
+                  "ru": "Нью-Йорк Рейнджерс"
+                },
+                "shortNameTranslation": {
+  
+                }
+              }
+            },
+            "descriptions": [],
+            "position": 1,
+            "matches": 76,
+            "wins": 51,
+            "scoresFor": 263,
+            "scoresAgainst": 214,
+            "overtimeWins": 8,
+            "overtimeLosses": 0,
+            "penaltyWins": 3,
+            "penaltyLosses": 3,
+            "overtimeAndPenaltyWins": 11,
+            "overtimeAndPenaltyLosses": 4,
+            "id": 873390,
+            "losses": 25,
+            "draws": 0,
+            "points": 106
+          },
+          {
+            "team": {
+              "name": "Dallas Stars",
+              "slug": "dallas-stars",
+              "shortName": "Stars",
+              "gender": "M",
+              "sport": {
+                "name": "Ice hockey",
+                "slug": "ice-hockey",
+                "id": 4
+              },
+              "userCount": 6188,
+              "nameCode": "DAL",
+              "disabled": false,
+              "national": false,
+              "type": 0,
+              "id": 3684,
+              "teamColors": {
+                "primary": "#006847",
+                "secondary": "#111111",
+                "text": "#111111"
+              },
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "ar": "دالاس ستارس",
+                  "ru": "Даллас Старз"
+                },
+                "shortNameTranslation": {
+  
+                }
+              }
+            },
+            "descriptions": [],
+            "position": 2,
+            "matches": 76,
+            "wins": 48,
+            "scoresFor": 281,
+            "scoresAgainst": 220,
+            "overtimeWins": 8,
+            "overtimeLosses": 7,
+            "penaltyWins": 3,
+            "penaltyLosses": 2,
+            "overtimeAndPenaltyWins": 11,
+            "overtimeAndPenaltyLosses": 9,
+            "id": 873380,
+            "losses": 28,
+            "draws": 0,
+            "points": 105
+          },
+          {
+            "team": {
+              "name": "Boston Bruins",
+              "slug": "boston-bruins",
+              "shortName": "Bruins",
+              "gender": "M",
+              "sport": {
+                "name": "Ice hockey",
+                "slug": "ice-hockey",
+                "id": 4
+              },
+              "userCount": 17876,
+              "nameCode": "BOS",
+              "disabled": false,
+              "national": false,
+              "type": 0,
+              "id": 3677,
+              "teamColors": {
+                "primary": "#111111",
+                "secondary": "#fcb514",
+                "text": "#fcb514"
+              },
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "ar": "بوسطن برونس",
+                  "ru": "Бостон Браинс"
+                },
+                "shortNameTranslation": {
+  
+                }
+              }
+            },
+            "descriptions": [],
+            "position": 3,
+            "matches": 77,
+            "wins": 45,
+            "scoresFor": 256,
+            "scoresAgainst": 209,
+            "overtimeWins": 6,
+            "overtimeLosses": 12,
+            "penaltyWins": 4,
+            "penaltyLosses": 3,
+            "overtimeAndPenaltyWins": 10,
+            "overtimeAndPenaltyLosses": 15,
+            "id": 873373,
+            "losses": 32,
+            "draws": 0,
+            "points": 105
+          },
+          {
+            "team": {
+              "name": "Vancouver Canucks",
+              "slug": "vancouver-canucks",
+              "shortName": "Canucks",
+              "gender": "M",
+              "sport": {
+                "name": "Ice hockey",
+                "slug": "ice-hockey",
+                "id": 4
+              },
+              "userCount": 5742,
+              "nameCode": "VAN",
+              "disabled": false,
+              "national": false,
+              "type": 0,
+              "id": 3692,
+              "teamColors": {
+                "primary": "#001f5b",
+                "secondary": "#008852",
+                "text": "#008852"
+              },
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "ar": "ڢانكوڢر كانوكس",
+                  "ru": "Ванкувер Кэнакс"
+                },
+                "shortNameTranslation": {
+  
+                }
+              }
+            },
+            "descriptions": [],
+            "position": 4,
+            "matches": 76,
+            "wins": 47,
+            "scoresFor": 260,
+            "scoresAgainst": 204,
+            "overtimeWins": 6,
+            "overtimeLosses": 6,
+            "penaltyWins": 0,
+            "penaltyLosses": 2,
+            "overtimeAndPenaltyWins": 6,
+            "overtimeAndPenaltyLosses": 8,
+            "id": 873399,
+            "losses": 29,
+            "draws": 0,
+            "points": 102
+          },
+          {
+            "team": {
+              "name": "Colorado Avalanche",
+              "slug": "colorado-avalanche",
+              "shortName": "Avalanche",
+              "gender": "M",
+              "sport": {
+                "name": "Ice hockey",
+                "slug": "ice-hockey",
+                "id": 4
+              },
+              "userCount": 10601,
+              "nameCode": "COL",
+              "disabled": false,
+              "national": false,
+              "type": 0,
+              "id": 3682,
+              "teamColors": {
+                "primary": "#6f263d",
+                "secondary": "#236192",
+                "text": "#236192"
+              },
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "ar": "كولورادو اڢالانشي",
+                  "ru": "Колорадо Эвэленч"
+                },
+                "shortNameTranslation": {
+  
+                }
+              }
+            },
+            "descriptions": [],
+            "position": 5,
+            "matches": 76,
+            "wins": 48,
+            "scoresFor": 285,
+            "scoresAgainst": 227,
+            "overtimeWins": 6,
+            "overtimeLosses": 4,
+            "penaltyWins": 2,
+            "penaltyLosses": 2,
+            "overtimeAndPenaltyWins": 8,
+            "overtimeAndPenaltyLosses": 6,
+            "id": 873378,
+            "losses": 28,
+            "draws": 0,
+            "points": 102
+          },
+          {
+            "team": {
+              "name": "Carolina Hurricanes",
+              "slug": "carolina-hurricanes",
+              "shortName": "Hurricanes",
+              "gender": "M",
+              "sport": {
+                "name": "Ice hockey",
+                "slug": "ice-hockey",
+                "id": 4
+              },
+              "userCount": 9586,
+              "nameCode": "CAR",
+              "disabled": false,
+              "national": false,
+              "type": 0,
+              "id": 3680,
+              "teamColors": {
+                "primary": "#cc0000",
+                "secondary": "#ffffff",
+                "text": "#ffffff"
+              },
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "ar": "كارولاينا هاريكاينس",
+                  "ru": "Каролина Харракейнс"
+                },
+                "shortNameTranslation": {
+  
+                }
+              }
+            },
+            "descriptions": [],
+            "position": 6,
+            "matches": 76,
+            "wins": 47,
+            "scoresFor": 256,
+            "scoresAgainst": 203,
+            "overtimeWins": 6,
+            "overtimeLosses": 2,
+            "penaltyWins": 2,
+            "penaltyLosses": 5,
+            "overtimeAndPenaltyWins": 8,
+            "overtimeAndPenaltyLosses": 7,
+            "id": 873376,
+            "losses": 29,
+            "draws": 0,
+            "points": 101
+          },
+          {
+            "team": {
+              "name": "Florida Panthers",
+              "slug": "florida-panthers",
+              "shortName": "Panthers",
+              "gender": "M",
+              "sport": {
+                "name": "Ice hockey",
+                "slug": "ice-hockey",
+                "id": 4
+              },
+              "userCount": 10385,
+              "nameCode": "FLA",
+              "disabled": false,
+              "national": false,
+              "type": 0,
+              "id": 3687,
+              "teamColors": {
+                "primary": "#c8102e",
+                "secondary": "#041e42",
+                "text": "#041e42"
+              },
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "ar": "فلوريدا پانتيرس",
+                  "ru": "Флорида Пантерс"
+                },
+                "shortNameTranslation": {
+  
+                }
+              }
+            },
+            "descriptions": [],
+            "position": 7,
+            "matches": 77,
+            "wins": 48,
+            "scoresFor": 252,
+            "scoresAgainst": 193,
+            "overtimeWins": 6,
+            "overtimeLosses": 3,
+            "penaltyWins": 3,
+            "penaltyLosses": 2,
+            "overtimeAndPenaltyWins": 9,
+            "overtimeAndPenaltyLosses": 5,
+            "id": 873383,
+            "losses": 29,
+            "draws": 0,
+            "points": 101
+          },
+          {
+            "team": {
+              "name": "Winnipeg Jets",
+              "slug": "winnipeg-jets",
+              "shortName": "Jets",
+              "gender": "M",
+              "sport": {
+                "name": "Ice hockey",
+                "slug": "ice-hockey",
+                "id": 4
+              },
+              "userCount": 3933,
+              "nameCode": "WPG",
+              "disabled": false,
+              "national": false,
+              "type": 0,
+              "id": 3676,
+              "teamColors": {
+                "primary": "#041e41",
+                "secondary": "#8e9090",
+                "text": "#8e9090"
+              },
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "ar": "وينيپيج دجيتس",
+                  "ru": "Виннипег Джетс"
+                },
+                "shortNameTranslation": {
+  
+                }
+              }
+            },
+            "descriptions": [],
+            "position": 8,
+            "matches": 76,
+            "wins": 46,
+            "scoresFor": 233,
+            "scoresAgainst": 189,
+            "overtimeWins": 5,
+            "overtimeLosses": 5,
+            "penaltyWins": 0,
+            "penaltyLosses": 1,
+            "overtimeAndPenaltyWins": 5,
+            "overtimeAndPenaltyLosses": 6,
+            "id": 873402,
+            "losses": 30,
+            "draws": 0,
+            "points": 98
+          },
+          {
+            "team": {
+              "name": "Edmonton Oilers",
+              "slug": "edmonton-oilers",
+              "shortName": "Oilers",
+              "gender": "M",
+              "sport": {
+                "name": "Ice hockey",
+                "slug": "ice-hockey",
+                "id": 4
+              },
+              "userCount": 8619,
+              "nameCode": "EDM",
+              "disabled": false,
+              "national": false,
+              "type": 0,
+              "id": 3686,
+              "teamColors": {
+                "primary": "#ff4c00",
+                "secondary": "#041e41",
+                "text": "#041e41"
+              },
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "ar": "ايدمونتون اويلورس",
+                  "ru": "Эдмонтон Ойлерс"
+                },
+                "shortNameTranslation": {
+  
+                }
+              }
+            },
+            "descriptions": [],
+            "position": 9,
+            "matches": 74,
+            "wins": 45,
+            "scoresFor": 264,
+            "scoresAgainst": 214,
+            "overtimeWins": 8,
+            "overtimeLosses": 4,
+            "penaltyWins": 2,
+            "penaltyLosses": 1,
+            "overtimeAndPenaltyWins": 10,
+            "overtimeAndPenaltyLosses": 5,
+            "id": 873382,
+            "losses": 29,
+            "draws": 0,
+            "points": 95
+          },
+          {
+            "team": {
+              "name": "Toronto Maple Leafs",
+              "slug": "toronto-maple-leafs",
+              "shortName": "Maple Leafs",
+              "gender": "M",
+              "sport": {
+                "name": "Ice hockey",
+                "slug": "ice-hockey",
+                "id": 4
+              },
+              "userCount": 12293,
+              "nameCode": "TOR",
+              "disabled": false,
+              "national": false,
+              "type": 0,
+              "id": 3693,
+              "teamColors": {
+                "primary": "#ffffff",
+                "secondary": "#002868",
+                "text": "#002868"
+              },
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "ar": "تورونتو ماپل ليفس",
+                  "ru": "ХК Торонто Мапл Лифс"
+                },
+                "shortNameTranslation": {
+  
+                }
+              }
+            },
+            "descriptions": [],
+            "position": 10,
+            "matches": 75,
+            "wins": 43,
+            "scoresFor": 276,
+            "scoresAgainst": 235,
+            "overtimeWins": 7,
+            "overtimeLosses": 7,
+            "penaltyWins": 5,
+            "penaltyLosses": 2,
+            "overtimeAndPenaltyWins": 12,
+            "overtimeAndPenaltyLosses": 9,
+            "id": 873398,
+            "losses": 32,
+            "draws": 0,
+            "points": 95
+          },
+          {
+            "team": {
+              "name": "Tampa Bay Lightning",
+              "slug": "tampa-bay-lightning",
+              "shortName": "Lightning",
+              "gender": "M",
+              "sport": {
+                "name": "Ice hockey",
+                "slug": "ice-hockey",
+                "id": 4
+              },
+              "userCount": 13615,
+              "nameCode": "TB",
+              "disabled": false,
+              "national": false,
+              "type": 0,
+              "id": 3694,
+              "teamColors": {
+                "primary": "#00205b",
+                "secondary": "#ffffff",
+                "text": "#ffffff"
+              },
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "ar": "تامپا باي لايتينغ",
+                  "ru": "Тампа Бэй"
+                },
+                "shortNameTranslation": {
+  
+                }
+              }
+            },
+            "descriptions": [],
+            "position": 11,
+            "matches": 76,
+            "wins": 43,
+            "scoresFor": 270,
+            "scoresAgainst": 246,
+            "overtimeWins": 5,
+            "overtimeLosses": 7,
+            "penaltyWins": 3,
+            "penaltyLosses": 0,
+            "overtimeAndPenaltyWins": 8,
+            "overtimeAndPenaltyLosses": 7,
+            "id": 873397,
+            "losses": 33,
+            "draws": 0,
+            "points": 93
+          },
+          {
+            "team": {
+              "name": "Vegas Golden Knights",
+              "slug": "vegas-golden-knights",
+              "shortName": "Golden Knights",
+              "gender": "M",
+              "sport": {
+                "name": "Ice hockey",
+                "slug": "ice-hockey",
+                "id": 4
+              },
+              "userCount": 9287,
+              "nameCode": "VGK",
+              "disabled": false,
+              "national": false,
+              "type": 0,
+              "id": 257523,
+              "teamColors": {
+                "primary": "#333f42",
+                "secondary": "#b4975a",
+                "text": "#b4975a"
+              },
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "ar": "فيغاس غولدن نايتس",
+                  "ru": "Вегас Голден Найтс"
+                },
+                "shortNameTranslation": {
+  
+                }
+              }
+            },
+            "descriptions": [],
+            "position": 12,
+            "matches": 75,
+            "wins": 42,
+            "scoresFor": 244,
+            "scoresAgainst": 219,
+            "overtimeWins": 6,
+            "overtimeLosses": 6,
+            "penaltyWins": 4,
+            "penaltyLosses": 2,
+            "overtimeAndPenaltyWins": 10,
+            "overtimeAndPenaltyLosses": 8,
+            "id": 873400,
+            "losses": 33,
+            "draws": 0,
+            "points": 92
+          },
+          {
+            "team": {
+              "name": "Nashville Predators",
+              "slug": "nashville-predators",
+              "shortName": "Predators",
+              "gender": "M",
+              "sport": {
+                "name": "Ice hockey",
+                "slug": "ice-hockey",
+                "id": 4
+              },
+              "userCount": 4485,
+              "nameCode": "NSH",
+              "disabled": false,
+              "national": false,
+              "type": 0,
+              "id": 3705,
+              "teamColors": {
+                "primary": "#ffb81c",
+                "secondary": "#041e42",
+                "text": "#041e42"
+              },
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "ar": "ناشڢيل پريداتورس",
+                  "ru": "Нэшвилл Предэйторс"
+                },
+                "shortNameTranslation": {
+  
+                }
+              }
+            },
+            "descriptions": [],
+            "position": 13,
+            "matches": 76,
+            "wins": 44,
+            "scoresFor": 250,
+            "scoresAgainst": 231,
+            "overtimeWins": 6,
+            "overtimeLosses": 4,
+            "penaltyWins": 2,
+            "penaltyLosses": 0,
+            "overtimeAndPenaltyWins": 8,
+            "overtimeAndPenaltyLosses": 4,
+            "id": 873387,
+            "losses": 32,
+            "draws": 0,
+            "points": 92
+          },
+          {
+            "team": {
+              "name": "Los Angeles Kings",
+              "slug": "los-angeles-kings",
+              "shortName": "Kings",
+              "gender": "M",
+              "sport": {
+                "name": "Ice hockey",
+                "slug": "ice-hockey",
+                "id": 4
+              },
+              "userCount": 6009,
+              "nameCode": "LA",
+              "disabled": false,
+              "national": false,
+              "type": 0,
+              "id": 3688,
+              "teamColors": {
+                "primary": "#acaea9",
+                "secondary": "#111111",
+                "text": "#111111"
+              },
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "ar": "لوس انجلس كينغس",
+                  "ru": "Лос-Анджелес Кингс"
+                },
+                "shortNameTranslation": {
+  
+                }
+              }
+            },
+            "descriptions": [],
+            "position": 14,
+            "matches": 76,
+            "wins": 40,
+            "scoresFor": 236,
+            "scoresAgainst": 200,
+            "overtimeWins": 4,
+            "overtimeLosses": 6,
+            "penaltyWins": 2,
+            "penaltyLosses": 5,
+            "overtimeAndPenaltyWins": 6,
+            "overtimeAndPenaltyLosses": 11,
+            "id": 873384,
+            "losses": 36,
+            "draws": 0,
+            "points": 91
+          },
+          {
+            "team": {
+              "name": "St. Louis Blues",
+              "slug": "st-louis-blues",
+              "shortName": "Blues",
+              "gender": "M",
+              "sport": {
+                "name": "Ice hockey",
+                "slug": "ice-hockey",
+                "id": 4
+              },
+              "userCount": 4332,
+              "nameCode": "STL",
+              "disabled": false,
+              "national": false,
+              "type": 0,
+              "id": 3695,
+              "teamColors": {
+                "primary": "#002f87",
+                "secondary": "#fcb514",
+                "text": "#fcb514"
+              },
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "ar": "سانت لويس بلوز",
+                  "ru": "Сейнт-Льюис Блюз"
+                },
+                "shortNameTranslation": {
+  
+                }
+              }
+            },
+            "descriptions": [],
+            "position": 15,
+            "matches": 76,
+            "wins": 40,
+            "scoresFor": 219,
+            "scoresAgainst": 232,
+            "overtimeWins": 7,
+            "overtimeLosses": 3,
+            "penaltyWins": 4,
+            "penaltyLosses": 1,
+            "overtimeAndPenaltyWins": 11,
+            "overtimeAndPenaltyLosses": 4,
+            "id": 873396,
+            "losses": 36,
+            "draws": 0,
+            "points": 84
+          },
+          {
+            "team": {
+              "name": "Philadelphia Flyers",
+              "slug": "philadelphia-flyers",
+              "shortName": "Flyers",
+              "gender": "M",
+              "sport": {
+                "name": "Ice hockey",
+                "slug": "ice-hockey",
+                "id": 4
+              },
+              "userCount": 4007,
+              "nameCode": "PHI",
+              "disabled": false,
+              "national": false,
+              "type": 0,
+              "id": 3699,
+              "teamColors": {
+                "primary": "#f74902",
+                "secondary": "#000000",
+                "text": "#000000"
+              },
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "ar": "فيلاديلفيا فلايرس",
+                  "ru": "Филадельфия Флайерс"
+                },
+                "shortNameTranslation": {
+  
+                }
+              }
+            },
+            "descriptions": [],
+            "position": 16,
+            "matches": 76,
+            "wins": 36,
+            "scoresFor": 222,
+            "scoresAgainst": 239,
+            "overtimeWins": 4,
+            "overtimeLosses": 8,
+            "penaltyWins": 4,
+            "penaltyLosses": 3,
+            "overtimeAndPenaltyWins": 8,
+            "overtimeAndPenaltyLosses": 11,
+            "id": 873392,
+            "losses": 40,
+            "draws": 0,
+            "points": 83
+          },
+          {
+            "team": {
+              "name": "New York Islanders",
+              "slug": "new-york-islanders",
+              "shortName": "Islanders",
+              "gender": "M",
+              "sport": {
+                "name": "Ice hockey",
+                "slug": "ice-hockey",
+                "id": 4
+              },
+              "userCount": 4814,
+              "nameCode": "NYI",
+              "disabled": false,
+              "national": false,
+              "type": 0,
+              "id": 3703,
+              "teamColors": {
+                "primary": "#00539b",
+                "secondary": "#f47d30",
+                "text": "#f47d30"
+              },
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "ar": "نيويورك آيلندرس",
+                  "ru": "Нью-Йорк Айлендерс"
+                },
+                "shortNameTranslation": {
+  
+                }
+              }
+            },
+            "descriptions": [],
+            "position": 17,
+            "matches": 76,
+            "wins": 34,
+            "scoresFor": 226,
+            "scoresAgainst": 251,
+            "overtimeWins": 8,
+            "overtimeLosses": 11,
+            "penaltyWins": 1,
+            "penaltyLosses": 4,
+            "overtimeAndPenaltyWins": 9,
+            "overtimeAndPenaltyLosses": 15,
+            "id": 873389,
+            "losses": 42,
+            "draws": 0,
+            "points": 83
+          },
+          {
+            "team": {
+              "name": "Washington Capitals",
+              "slug": "washington-capitals",
+              "shortName": "Capitals",
+              "gender": "M",
+              "sport": {
+                "name": "Ice hockey",
+                "slug": "ice-hockey",
+                "id": 4
+              },
+              "userCount": 9596,
+              "nameCode": "WSH",
+              "disabled": false,
+              "national": false,
+              "type": 0,
+              "id": 3691,
+              "teamColors": {
+                "primary": "#d42329",
+                "secondary": "#041e41",
+                "text": "#041e41"
+              },
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "ar": "واشنطن كاپيتالس",
+                  "ru": "Вашингтон Кэпитэлз"
+                },
+                "shortNameTranslation": {
+  
+                }
+              }
+            },
+            "descriptions": [],
+            "position": 18,
+            "matches": 75,
+            "wins": 36,
+            "scoresFor": 204,
+            "scoresAgainst": 242,
+            "overtimeWins": 4,
+            "overtimeLosses": 5,
+            "penaltyWins": 4,
+            "penaltyLosses": 5,
+            "overtimeAndPenaltyWins": 8,
+            "overtimeAndPenaltyLosses": 10,
+            "id": 873401,
+            "losses": 39,
+            "draws": 0,
+            "points": 82
+          },
+          {
+            "team": {
+              "name": "Detroit Red Wings",
+              "slug": "detroit-red-wings",
+              "shortName": "Red Wings",
+              "gender": "M",
+              "sport": {
+                "name": "Ice hockey",
+                "slug": "ice-hockey",
+                "id": 4
+              },
+              "userCount": 5036,
+              "nameCode": "DET",
+              "disabled": false,
+              "national": false,
+              "type": 0,
+              "id": 3685,
+              "teamColors": {
+                "primary": "#ffffff",
+                "secondary": "#ce1126",
+                "text": "#ce1126"
+              },
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "ar": "ديترويت ريد وينغس",
+                  "ru": "Детройт Ред Вингс"
+                },
+                "shortNameTranslation": {
+  
+                }
+              }
+            },
+            "descriptions": [],
+            "position": 19,
+            "matches": 75,
+            "wins": 37,
+            "scoresFor": 251,
+            "scoresAgainst": 249,
+            "overtimeWins": 9,
+            "overtimeLosses": 7,
+            "penaltyWins": 2,
+            "penaltyLosses": 1,
+            "overtimeAndPenaltyWins": 11,
+            "overtimeAndPenaltyLosses": 8,
+            "id": 873381,
+            "losses": 38,
+            "draws": 0,
+            "points": 82
+          },
+          {
+            "team": {
+              "name": "Minnesota Wild",
+              "slug": "minnesota-wild",
+              "shortName": "Wild",
+              "gender": "M",
+              "sport": {
+                "name": "Ice hockey",
+                "slug": "ice-hockey",
+                "id": 4
+              },
+              "userCount": 5050,
+              "nameCode": "MIN",
+              "disabled": false,
+              "national": false,
+              "type": 0,
+              "id": 3689,
+              "teamColors": {
+                "primary": "#024930",
+                "secondary": "#af1e24",
+                "text": "#af1e24"
+              },
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "ar": "مينيسوتا وايلد",
+                  "ru": "Миннесота Вилд"
+                },
+                "shortNameTranslation": {
+  
+                }
+              }
+            },
+            "descriptions": [],
+            "position": 20,
+            "matches": 75,
+            "wins": 36,
+            "scoresFor": 229,
+            "scoresAgainst": 240,
+            "overtimeWins": 4,
+            "overtimeLosses": 7,
+            "penaltyWins": 3,
+            "penaltyLosses": 3,
+            "overtimeAndPenaltyWins": 7,
+            "overtimeAndPenaltyLosses": 10,
+            "id": 873385,
+            "losses": 39,
+            "draws": 0,
+            "points": 81
+          },
+          {
+            "team": {
+              "name": "Pittsburgh Penguins",
+              "slug": "pittsburgh-penguins",
+              "shortName": "Penguins",
+              "gender": "M",
+              "sport": {
+                "name": "Ice hockey",
+                "slug": "ice-hockey",
+                "id": 4
+              },
+              "userCount": 9350,
+              "nameCode": "PIT",
+              "disabled": false,
+              "national": false,
+              "type": 0,
+              "id": 3697,
+              "teamColors": {
+                "primary": "#000000",
+                "secondary": "#fcb514",
+                "text": "#fcb514"
+              },
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "ar": "پيتسبورغ پينجوينس",
+                  "ru": "Питтсбург Пингвинс"
+                },
+                "shortNameTranslation": {
+  
+                }
+              }
+            },
+            "descriptions": [],
+            "position": 21,
+            "matches": 76,
+            "wins": 35,
+            "scoresFor": 230,
+            "scoresAgainst": 226,
+            "overtimeWins": 3,
+            "overtimeLosses": 8,
+            "penaltyWins": 2,
+            "penaltyLosses": 3,
+            "overtimeAndPenaltyWins": 5,
+            "overtimeAndPenaltyLosses": 11,
+            "id": 873393,
+            "losses": 41,
+            "draws": 0,
+            "points": 81
+          },
+          {
+            "team": {
+              "name": "Buffalo Sabres",
+              "slug": "buffalo-sabres",
+              "shortName": "Sabres",
+              "gender": "M",
+              "sport": {
+                "name": "Ice hockey",
+                "slug": "ice-hockey",
+                "id": 4
+              },
+              "userCount": 3697,
+              "nameCode": "BUF",
+              "disabled": false,
+              "national": false,
+              "type": 0,
+              "id": 3678,
+              "teamColors": {
+                "primary": "#002654",
+                "secondary": "#fcb514",
+                "text": "#fcb514"
+              },
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "ar": "بافالو سابريس",
+                  "ru": "Баффало Сэйбрс"
+                },
+                "shortNameTranslation": {
+  
+                }
+              }
+            },
+            "descriptions": [],
+            "position": 22,
+            "matches": 76,
+            "wins": 36,
+            "scoresFor": 229,
+            "scoresAgainst": 229,
+            "overtimeWins": 4,
+            "overtimeLosses": 4,
+            "penaltyWins": 2,
+            "penaltyLosses": 1,
+            "overtimeAndPenaltyWins": 6,
+            "overtimeAndPenaltyLosses": 5,
+            "id": 873374,
+            "losses": 40,
+            "draws": 0,
+            "points": 77
+          },
+          {
+            "team": {
+              "name": "New Jersey Devils",
+              "slug": "new-jersey-devils",
+              "shortName": "Devils",
+              "gender": "M",
+              "sport": {
+                "name": "Ice hockey",
+                "slug": "ice-hockey",
+                "id": 4
+              },
+              "userCount": 6339,
+              "nameCode": "NJ",
+              "disabled": false,
+              "national": false,
+              "type": 0,
+              "id": 3704,
+              "teamColors": {
+                "primary": "#ce1126",
+                "secondary": "#000000",
+                "text": "#000000"
+              },
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "ar": "نيودجيرسي ديڢيلس",
+                  "ru": "Нью-Джерси Дэвилз"
+                },
+                "shortNameTranslation": {
+  
+                }
+              }
+            },
+            "descriptions": [],
+            "position": 23,
+            "matches": 76,
+            "wins": 36,
+            "scoresFor": 249,
+            "scoresAgainst": 262,
+            "overtimeWins": 5,
+            "overtimeLosses": 3,
+            "penaltyWins": 0,
+            "penaltyLosses": 1,
+            "overtimeAndPenaltyWins": 5,
+            "overtimeAndPenaltyLosses": 4,
+            "id": 873388,
+            "losses": 40,
+            "draws": 0,
+            "points": 76
+          },
+          {
+            "team": {
+              "name": "Seattle Kraken",
+              "slug": "seattle-kraken",
+              "shortName": "Kraken",
+              "gender": "M",
+              "sport": {
+                "name": "Ice hockey",
+                "slug": "ice-hockey",
+                "id": 4
+              },
+              "userCount": 4520,
+              "nameCode": "SEA",
+              "disabled": false,
+              "national": false,
+              "type": 0,
+              "id": 381707,
+              "teamColors": {
+                "primary": "#52b030",
+                "secondary": "#52b030",
+                "text": "#ffffff"
+              }
+            },
+            "descriptions": [],
+            "position": 24,
+            "matches": 75,
+            "wins": 31,
+            "scoresFor": 199,
+            "scoresAgainst": 218,
+            "overtimeWins": 3,
+            "overtimeLosses": 9,
+            "penaltyWins": 3,
+            "penaltyLosses": 4,
+            "overtimeAndPenaltyWins": 6,
+            "overtimeAndPenaltyLosses": 13,
+            "id": 873395,
+            "losses": 44,
+            "draws": 0,
+            "points": 75
+          },
+          {
+            "team": {
+              "name": "Calgary Flames",
+              "slug": "calgary-flames",
+              "shortName": "Flames",
+              "gender": "M",
+              "sport": {
+                "name": "Ice hockey",
+                "slug": "ice-hockey",
+                "id": 4
+              },
+              "userCount": 4197,
+              "nameCode": "CGY",
+              "disabled": false,
+              "national": false,
+              "type": 0,
+              "id": 3679,
+              "teamColors": {
+                "primary": "#ce1126",
+                "secondary": "#f3bc52",
+                "text": "#f3bc52"
+              },
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "ar": "كالجاري فلايمس",
+                  "ru": "Калгари Флэймс"
+                },
+                "shortNameTranslation": {
+  
+                }
+              }
+            },
+            "descriptions": [],
+            "position": 25,
+            "matches": 75,
+            "wins": 34,
+            "scoresFor": 229,
+            "scoresAgainst": 248,
+            "overtimeWins": 5,
+            "overtimeLosses": 1,
+            "penaltyWins": 0,
+            "penaltyLosses": 4,
+            "overtimeAndPenaltyWins": 5,
+            "overtimeAndPenaltyLosses": 5,
+            "id": 873375,
+            "losses": 41,
+            "draws": 0,
+            "points": 73
+          },
+          {
+            "team": {
+              "name": "Ottawa Senators",
+              "slug": "ottawa-senators",
+              "shortName": "Senators",
+              "gender": "M",
+              "sport": {
+                "name": "Ice hockey",
+                "slug": "ice-hockey",
+                "id": 4
+              },
+              "userCount": 3381,
+              "nameCode": "OTT",
+              "disabled": false,
+              "national": false,
+              "type": 0,
+              "id": 3700,
+              "teamColors": {
+                "primary": "#ce1126",
+                "secondary": "#000000",
+                "text": "#000000"
+              },
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "ar": "اوتاوا سيناتورس",
+                  "ru": "Оттава Синэйтерс"
+                },
+                "shortNameTranslation": {
+  
+                }
+              }
+            },
+            "descriptions": [],
+            "position": 26,
+            "matches": 75,
+            "wins": 33,
+            "scoresFor": 238,
+            "scoresAgainst": 262,
+            "overtimeWins": 6,
+            "overtimeLosses": 4,
+            "penaltyWins": 3,
+            "penaltyLosses": 0,
+            "overtimeAndPenaltyWins": 9,
+            "overtimeAndPenaltyLosses": 4,
+            "id": 873391,
+            "losses": 42,
+            "draws": 0,
+            "points": 70
+          },
+          {
+            "team": {
+              "name": "Montréal Canadiens",
+              "slug": "montreal-canadiens",
+              "shortName": "Canadiens",
+              "gender": "M",
+              "sport": {
+                "name": "Ice hockey",
+                "slug": "ice-hockey",
+                "id": 4
+              },
+              "userCount": 7669,
+              "nameCode": "MTL",
+              "disabled": false,
+              "national": false,
+              "type": 0,
+              "id": 3690,
+              "teamColors": {
+                "primary": "#af1e2d",
+                "secondary": "#192168",
+                "text": "#192168"
+              },
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "ar": "مونتريال كاناديينس",
+                  "ru": "Монреаль Канадиенс"
+                },
+                "shortNameTranslation": {
+  
+                }
+              }
+            },
+            "descriptions": [],
+            "position": 27,
+            "matches": 75,
+            "wins": 29,
+            "scoresFor": 209,
+            "scoresAgainst": 259,
+            "overtimeWins": 6,
+            "overtimeLosses": 6,
+            "penaltyWins": 4,
+            "penaltyLosses": 6,
+            "overtimeAndPenaltyWins": 10,
+            "overtimeAndPenaltyLosses": 12,
+            "id": 873386,
+            "losses": 46,
+            "draws": 0,
+            "points": 70
+          },
+          {
+            "team": {
+              "name": "Arizona Coyotes",
+              "slug": "arizona-coyotes",
+              "shortName": "Coyotes",
+              "gender": "M",
+              "sport": {
+                "name": "Ice hockey",
+                "slug": "ice-hockey",
+                "id": 4
+              },
+              "userCount": 2470,
+              "nameCode": "ARI",
+              "disabled": false,
+              "national": false,
+              "type": 0,
+              "id": 3698,
+              "teamColors": {
+                "primary": "#8c2633",
+                "secondary": "#e2d6b5",
+                "text": "#e2d6b5"
+              },
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "ar": "أريزونا كايوتيز",
+                  "ru": "Аризона Койотис"
+                },
+                "shortNameTranslation": {
+  
+                }
+              }
+            },
+            "descriptions": [],
+            "position": 28,
+            "matches": 75,
+            "wins": 31,
+            "scoresFor": 227,
+            "scoresAgainst": 250,
+            "overtimeWins": 4,
+            "overtimeLosses": 5,
+            "penaltyWins": 2,
+            "penaltyLosses": 0,
+            "overtimeAndPenaltyWins": 6,
+            "overtimeAndPenaltyLosses": 5,
+            "id": 873372,
+            "losses": 44,
+            "draws": 0,
+            "points": 67
+          },
+          {
+            "team": {
+              "name": "Columbus Blue Jackets",
+              "slug": "columbus-blue-jackets",
+              "shortName": "Blue Jackets",
+              "gender": "M",
+              "sport": {
+                "name": "Ice hockey",
+                "slug": "ice-hockey",
+                "id": 4
+              },
+              "userCount": 3381,
+              "nameCode": "CBJ",
+              "disabled": false,
+              "national": false,
+              "type": 0,
+              "id": 3683,
+              "teamColors": {
+                "primary": "#ce1126",
+                "secondary": "#002654",
+                "text": "#002654"
+              },
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "ar": "كولومبوس بلو دجاكيتس",
+                  "ru": "Коламбус Блу Джекетс"
+                },
+                "shortNameTranslation": {
+  
+                }
+              }
+            },
+            "descriptions": [],
+            "position": 29,
+            "matches": 76,
+            "wins": 25,
+            "scoresFor": 219,
+            "scoresAgainst": 277,
+            "overtimeWins": 3,
+            "overtimeLosses": 10,
+            "penaltyWins": 3,
+            "penaltyLosses": 2,
+            "overtimeAndPenaltyWins": 6,
+            "overtimeAndPenaltyLosses": 12,
+            "id": 873379,
+            "losses": 51,
+            "draws": 0,
+            "points": 62
+          },
+          {
+            "team": {
+              "name": "Anaheim Ducks",
+              "slug": "anaheim-ducks",
+              "shortName": "Ducks",
+              "gender": "M",
+              "sport": {
+                "name": "Ice hockey",
+                "slug": "ice-hockey",
+                "id": 4
+              },
+              "userCount": 3373,
+              "nameCode": "ANA",
+              "disabled": false,
+              "national": false,
+              "type": 0,
+              "id": 3675,
+              "teamColors": {
+                "primary": "#111111",
+                "secondary": "#b5985a",
+                "text": "#b5985a"
+              },
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "ar": "اناهايم دوكس",
+                  "ru": "Анахайм Дакс"
+                },
+                "shortNameTranslation": {
+  
+                }
+              }
+            },
+            "descriptions": [],
+            "position": 30,
+            "matches": 76,
+            "wins": 25,
+            "scoresFor": 187,
+            "scoresAgainst": 275,
+            "overtimeWins": 5,
+            "overtimeLosses": 3,
+            "penaltyWins": 1,
+            "penaltyLosses": 1,
+            "overtimeAndPenaltyWins": 6,
+            "overtimeAndPenaltyLosses": 4,
+            "id": 873371,
+            "losses": 51,
+            "draws": 0,
+            "points": 54
+          },
+          {
+            "team": {
+              "name": "Chicago Blackhawks",
+              "slug": "chicago-blackhawks",
+              "shortName": "Blackhawks",
+              "gender": "M",
+              "sport": {
+                "name": "Ice hockey",
+                "slug": "ice-hockey",
+                "id": 4
+              },
+              "userCount": 5271,
+              "nameCode": "CHI",
+              "disabled": false,
+              "national": false,
+              "type": 0,
+              "id": 3681,
+              "teamColors": {
+                "primary": "#cf0a2c",
+                "secondary": "#ffffff",
+                "text": "#ffffff"
+              },
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "ar": "شيكاغو بلاكهاوكس",
+                  "ru": "Чикаго Блэкхокс"
+                },
+                "shortNameTranslation": {
+  
+                }
+              }
+            },
+            "descriptions": [],
+            "position": 31,
+            "matches": 75,
+            "wins": 22,
+            "scoresFor": 166,
+            "scoresAgainst": 262,
+            "overtimeWins": 5,
+            "overtimeLosses": 4,
+            "penaltyWins": 1,
+            "penaltyLosses": 1,
+            "overtimeAndPenaltyWins": 6,
+            "overtimeAndPenaltyLosses": 5,
+            "id": 873377,
+            "losses": 53,
+            "draws": 0,
+            "points": 49
+          },
+          {
+            "team": {
+              "name": "San Jose Sharks",
+              "slug": "san-jose-sharks",
+              "shortName": "Sharks",
+              "gender": "M",
+              "sport": {
+                "name": "Ice hockey",
+                "slug": "ice-hockey",
+                "id": 4
+              },
+              "userCount": 3710,
+              "nameCode": "SJ",
+              "disabled": false,
+              "national": false,
+              "type": 0,
+              "id": 3696,
+              "teamColors": {
+                "primary": "#006d75",
+                "secondary": "#ea7200",
+                "text": "#ea7200"
+              },
+              "fieldTranslations": {
+                "nameTranslation": {
+                  "ar": "سان جوزي شاركس",
+                  "ru": "Сан-Хосе Шаркс"
+                },
+                "shortNameTranslation": {
+  
+                }
+              }
+            },
+            "descriptions": [],
+            "position": 32,
+            "matches": 75,
+            "wins": 17,
+            "scoresFor": 166,
+            "scoresAgainst": 300,
+            "overtimeWins": 2,
+            "overtimeLosses": 3,
+            "penaltyWins": 1,
+            "penaltyLosses": 5,
+            "overtimeAndPenaltyWins": 3,
+            "overtimeAndPenaltyLosses": 8,
+            "id": 873394,
+            "losses": 58,
+            "draws": 0,
+            "points": 42
+          }
+        ],
+        "id": 105724,
+        "updatedAtTimestamp": 1710920514
+      }
+    ]
+  }
