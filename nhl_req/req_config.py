@@ -16,6 +16,8 @@
 ### NHL 08/09: 1746 ###
 ### NHL 05/06: 10118 ###
 
-SEASON_ID = 52528
+CURR_SEASON_ID = 52528
+
 API_TIMEOUT = 1
+
 API_HEADERS_COMMON = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36'}
