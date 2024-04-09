@@ -1,9 +1,15 @@
 import sys
+
+import dataclasses_container.Player
 sys.path.append('..')
 import mysql.connector
 import db_config
 from nhl_req.requests_handler import Requests_handler
+from dataclasses_container import * 
 from time import sleep
+
+
+
 
 class NHL_DB:
     def __init__(self) -> None:

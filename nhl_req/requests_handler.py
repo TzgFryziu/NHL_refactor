@@ -8,11 +8,6 @@ class Requests_handler:
         self.upcoming_matches_id = []
         self.finished_matches_id = []
 
-    
-
-
-
-
 
     def update_finished_matches_id(self, num_pages: int = 1, season_id: int = CURR_SEASON_ID) -> None:
         for i in range(num_pages):
@@ -22,6 +17,7 @@ class Requests_handler:
             else: 
                 break
     
+    
     def update_upcoming_matches_id(self, num_pages: int = 1) -> None:
         for i in range(num_pages):
             temp = self.get_response_json_matches_id(get_upcoming_matches_url, i)
@@ -29,6 +25,7 @@ class Requests_handler:
                 self.upcoming_matches_id.extend(event["id"] for event in temp["events"])
             else: 
                 break
+
 
     def get_response_json(self, url_getter, id: int) -> dict | None:     
         sleep(API_TIMEOUT)
