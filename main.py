@@ -1,6 +1,5 @@
-from nhl_req.requests_handler import Requests_handler
+from db_connection.nhl_db import NHL_DB
 
-rq = Requests_handler()
-rq.update_finished_matches_id(3)
-print(rq.finished_matches_id)
+database = NHL_DB()
 
+database.update_matches("u")

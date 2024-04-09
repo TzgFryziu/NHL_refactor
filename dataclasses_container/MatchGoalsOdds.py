@@ -1,4 +1,4 @@
-class WinningTeamOdds:
+class MatchGoalsOdds:
     def __init__(self,
                  betID: int,
                  matchID: int,
