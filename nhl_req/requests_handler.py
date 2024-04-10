@@ -32,6 +32,40 @@ class Requests_handler:
         home_team = match_json["event"]["homeTeam"]["id"]
         away_team = match_json["event"]["awayTeam"]["id"]
         season_id = match_json["event"]["season"]["id"]
+        
+        if m_type == "f":
+            stats_json = self.get_response_json(get_match_stats_url,match_id)
+            home_score = match_json["event"]["homeScore"]["current"]
+            away_score = match_json["event"]["awayScore"]["current"]
+            home_shots = stats_json["statistics"][0]["groups"][0]["statisticsItems"][0]["home"]
+            away_shots = stats_json["statistics"][0]["groups"][0]["statisticsItems"][0]["away"]
+            home_shorthanded_goals = stats_json["statistics"][0]["groups"][0]["statisticsItems"][2]["home"]
+            away_shorthanded_goals = stats_json["statistics"][0]["groups"][0]["statisticsItems"][2]["away"]
+            home_powerplay_goals = stats_json["statistics"][0]["groups"][0]["statisticsItems"][1]["home"]
+            away_powerplay_goals = stats_json["statistics"][0]["groups"][0]["statisticsItems"][1]["away"]
+            home_faceoffs_won = stats_json["statistics"][0]["groups"][0]["statisticsItems"][3]["home"].split(" ")[1][1:-2]
+            away_faceoffs_won = stats_json["statistics"][0]["groups"][0]["statisticsItems"][3]["away"].split(" ")[1][1:-2]
+            home_penalty_mins = stats_json["statistics"][0]["groups"][0]["statisticsItems"][8]["home"]
+            away_penalty_mins = stats_json["statistics"][0]["groups"][0]["statisticsItems"][8]["away"]
+            
+            return Finished_match(match_id,
+                                  date,
+                                  home_team,
+                                  away_team,
+                                  home_score,
+                                  away_score,
+                                  home_shots,
+                                  away_shots,
+                                  home_shorthanded_goals,
+                                  away_shorthanded_goals,
+                                  home_powerplay_goals,
+                                  away_powerplay_goals,
+                                  home_faceoffs_won,
+                                  away_faceoffs_won,
+                                  home_penalty_mins,
+                                  away_penalty_mins,
+                                  season_id)
+
         return UpcomingMatch(match_id,date,home_team,away_team,season_id)
 
 

@@ -37,3 +37,6 @@ class Finished_match:
         self.home_penalty_mins = homePenaltyMins
         self.away_penalty_mins = awayPenaltyMins
         self.season_id = seasonID
+
+    def to_tuple(self):
+        return (self.match_id, self.match_date, self.match_time, self.home_team_id, self.away_team_id, self.home_score, self.away_score, self.home_shots, self.away_shots, self.home_shorthanded_goals, self.away_shorthanded_goals, self.home_powerplay_goals, self.away_powerplay_goals, self.home_faceoffs_won, self.away_faceoffs_won, self.home_penalty_mins, self.away_penalty_mins, self.season_id)

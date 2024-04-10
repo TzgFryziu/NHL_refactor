@@ -29,9 +29,9 @@ CREATE TABLE TeamsStats (
     draws INT,
     points INT,
     scoresFor INT,
-    scoresAgainst INT,
-    FOREIGN KEY (seasonID) REFERENCES seasons(seasonID),
-    FOREIGN KEY (teamID) REFERENCES teams(teamID)
+    scoresAgainst INT
+    -- FOREIGN KEY (seasonID) REFERENCES seasons(seasonID),
+    -- FOREIGN KEY (teamID) REFERENCES teams(teamID)
 );
 
 CREATE TABLE Players (
@@ -44,11 +44,11 @@ CREATE TABLE Players (
     height INT,
     country VARCHAR(255),
     dateOfBirth DATE,
-    PRIMARY KEY (playerID),
-    FOREIGN KEY (teamID) REFERENCES teams(teamID)
+    PRIMARY KEY (playerID)
+    -- FOREIGN KEY (teamID) REFERENCES teams(teamID)
 );
 
-CREATE TABLE FinishedMatches (
+CREATE TABLE Matches (
     matchID INT,
     matchDate DATE,
     matchTime TIME,
@@ -67,10 +67,10 @@ CREATE TABLE FinishedMatches (
     homePenaltyMins INT,
     awayPenaltyMins INT,
     seasonID INT,
-    PRIMARY KEY (matchID),
-    FOREIGN KEY (homeTeamID) REFERENCES teams(teamID),
-    FOREIGN KEY (awayTeamID) REFERENCES teams(teamID),
-    FOREIGN KEY (seasonID) REFERENCES seasons(seasonID)
+    PRIMARY KEY (matchID)
+    -- FOREIGN KEY (homeTeamID) REFERENCES teams(teamID),
+    -- FOREIGN KEY (awayTeamID) REFERENCES teams(teamID),
+    -- FOREIGN KEY (seasonID) REFERENCES seasons(seasonID)
 );
 
 CREATE TABLE PlayersStats (
@@ -81,23 +81,12 @@ CREATE TABLE PlayersStats (
     goals INT,
     shots INT,
     hits INT,
-    accuracy FLOAT(10),
-    FOREIGN KEY (matchID) REFERENCES finishedMatches(matchID),
-    FOREIGN KEY (playerID) REFERENCES players(playerID)
+    accuracy FLOAT(10)
+    -- FOREIGN KEY (matchID) REFERENCES finishedMatches(matchID),
+    -- FOREIGN KEY (playerID) REFERENCES players(playerID)
 );
 
-CREATE TABLE UpcomingMatches (
-    matchID INT,
-    matchDate DATE,
-    matchTime TIME,
-    homeTeamID INT,
-    awayTeamID INT,
-    seasonID INT,
-    PRIMARY KEY (matchID),
-    FOREIGN KEY (homeTeamID) REFERENCES teams(teamID),
-    FOREIGN KEY (awayTeamID) REFERENCES teams(teamID),
-    FOREIGN KEY (seasonID) REFERENCES seasons(seasonID)
-);
+
 
 CREATE TABLE WinningTeamOdds (
     betID INT,
@@ -105,9 +94,9 @@ CREATE TABLE WinningTeamOdds (
     homeWin FLOAT(10),
     awayWin FLOAT(10),
     winningBet INT,
-    PRIMARY KEY (betID),
-    FOREIGN KEY (matchID) REFERENCES upcomingMatches(matchID),
-    FOREIGN KEY (matchID) REFERENCES finishedMatches(matchID)
+    PRIMARY KEY (betID)
+    -- FOREIGN KEY (matchID) REFERENCES upcomingMatches(matchID),
+    -- FOREIGN KEY (matchID) REFERENCES finishedMatches(matchID)
 );
 
 CREATE TABLE MatchGoalsOdds (
@@ -117,8 +106,8 @@ CREATE TABLE MatchGoalsOdds (
     over_ FLOAT(10),
     under_ FLOAT(10),
     winningBet INT,
-    PRIMARY KEY (betID),
-    FOREIGN KEY (matchID) REFERENCES upcomingMatches(matchID),
-    FOREIGN KEY (matchID) REFERENCES finishedMatches(matchID)
+    PRIMARY KEY (betID)
+    -- FOREIGN KEY (matchID) REFERENCES upcomingMatches(matchID),
+    -- FOREIGN KEY (matchID) REFERENCES finishedMatches(matchID)
 );
 
