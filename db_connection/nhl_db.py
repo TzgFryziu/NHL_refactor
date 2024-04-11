@@ -34,11 +34,13 @@ class NHL_DB:
         for match_id in self.req_handler.finished_matches_id:
             self.cursor.execute("SELECT * FROM Matches WHERE matchID = (%s)",(match_id,))
             if self.cursor.fetchone() != None:
+
                 self.cursor.execute("SELECT homeScore FROM Matches WHERE matchID = (%s)",(match_id,))
 
-                if self.cursor.fetchone() != None:
+                if self.cursor.fetchone() != (None,):
                     print(f"Match {match_id} is already in database!")
                 else:
+                    print(f"Updating match {match_id}")
                     temp = self.req_handler.fetch_match_data(match_id,"f")
                     self.cursor.execute('''
                     UPDATE matches
