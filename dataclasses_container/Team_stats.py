@@ -1,14 +1,16 @@
 class TeamStats:
-    def __init__(self,
-                 teamID: int,
-                 seasonID: int,
-                 matchesPlayed: int,
-                 wins: int,
-                 losses: int,
-                 draws: int,
-                 points: int,
-                 scoresFor: int,
-                 scoresAgainst: int) -> None:
+    def __init__(
+        self,
+        teamID: int,
+        seasonID: int,
+        matchesPlayed: int,
+        wins: int,
+        losses: int,
+        draws: int,
+        points: int,
+        scoresFor: int,
+        scoresAgainst: int,
+    ) -> None:
         self.team_id = teamID
         self.season_id = seasonID
         self.matches_played = matchesPlayed

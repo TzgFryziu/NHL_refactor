@@ -28,4 +28,3 @@ def get_finished_matches_url(page_number: int, season_id: int) -> str:
 
 def get_upcoming_matches_url(page_number: int, season_id: int) -> str:
     return f"https://api.sofascore.com/api/v1/unique-tournament/234/season/{season_id}/events/next/{page_number}"
-

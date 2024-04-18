@@ -1,11 +1,13 @@
 class MatchGoalsOdds:
-    def __init__(self,
-                 betID: int,
-                 matchID: int,
-                 choiceGroup: int,
-                 over: float,
-                 under: float,
-                 winningBet: int) -> None:
+    def __init__(
+        self,
+        betID: int,
+        matchID: int,
+        choiceGroup: int,
+        over: float,
+        under: float,
+        winningBet: int,
+    ) -> None:
         self.bet_id = betID
         self.match_id = matchID
         self.choice_group = choiceGroup
