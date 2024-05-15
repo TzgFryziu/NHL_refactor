@@ -31,18 +31,24 @@ class Requests_handler:
 
             winner_json = self.get_response_json(get_cuptrees, season)
             if winner_json:
-                match_result = winner_json["cupTrees"][0]["rounds"][-1]["blocks"][0][
-                    "result"
-                ]
+                try:
+                    match_result = winner_json["cupTrees"][0]["rounds"][-1]["blocks"][
+                        0
+                    ]["result"]
+                except KeyError:
+                    match_result = None
 
                 if match_result == "away won":
                     winner = winner_json["cupTrees"][0]["rounds"][-1]["blocks"][0][
                         "participants"
                     ][1]["team"]["id"]
                 else:
-                    winner = winner_json["cupTrees"][0]["rounds"][-1]["blocks"][0][
-                        "participants"
-                    ][0]["team"]["id"]
+                    try:
+                        winner = winner_json["cupTrees"][0]["rounds"][-1]["blocks"][0][
+                            "participants"
+                        ][0]["team"]["id"]
+                    except IndexError:
+                        winner = None
             else:
                 winner = None
             temp = (season, SEASONS[season], winner, top_player)
