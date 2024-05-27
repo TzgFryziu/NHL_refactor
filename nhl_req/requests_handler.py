@@ -18,9 +18,13 @@ class Requests_handler:
         self.upcoming_matches_id = []
         self.finished_matches_id = []
 
-    def update_seasons(self) -> list[Season]:
+    def update_seasons(self) -> list[tuple[int, str, int, str]]:
         result = []
+        i =0
+        x = len(SEASONS)
         for season in SEASONS.keys():
+            i += 1
+            print(f"Fetching season {i}/{x}")
             top_player_json = self.get_response_json(get_top_players, season)
             if top_player_json:
                 top_player = top_player_json["topPlayers"]["points"][0]["player"][
@@ -52,7 +56,11 @@ class Requests_handler:
             else:
                 winner = None
             temp = (season, SEASONS[season], winner, top_player)
-            print(temp)
+            result.append(temp)
+            
+        return result
+
+  
 
     def update_finished_matches_id(
         self, num_pages: int = 1, season_id: int = CURR_SEASON_ID

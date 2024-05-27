@@ -10,7 +10,7 @@ from time import sleep
 class NHL_DB:
     def __init__(self) -> None:
         self.connection = mysql.connector.connect(
-            host=DB_HOSTNAME, user=DB_USERNAME, password=DB_PASSWORD, database=DB_NAME
+            host=DB_HOSTNAME, user=DB_USERNAME, database=DB_NAME
         )
         self.cursor = self.connection.cursor(buffered=True)
         self.req_handler = Requests_handler()
@@ -122,3 +122,18 @@ class NHL_DB:
             print(self.req_handler.upcoming_matches_id)
         else:
             print("Enter f/u")
+
+    def update_seasons(self):
+        seasons = self.req_handler.update_seasons()
+        for season in seasons:
+            self.cursor.execute(
+                "SELECT * FROM Seasons WHERE seasonID = (%s)", (season[0],)
+            )
+            if self.cursor.fetchone() != None:
+                print(f"Season {season[0]} is already in database!")
+            else:
+                print(f"Adding season {season[0]}")
+                self.cursor.execute(
+                    "INSERT INTO Seasons values (%s,%s,%s,%s)", season
+                )
+        self.connection.commit()
