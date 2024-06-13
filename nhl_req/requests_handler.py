@@ -60,7 +60,38 @@ class Requests_handler:
             
         return result
 
-  
+    def fetch_teams_data(self, season: int) -> list[tuple[int, str, str]]:
+        result = []
+        teams_json = self.get_response_json(get_teams_url, season)
+        teams = teams_json["standings"][6]["rows"]
+
+        for team in teams:
+            team_id = team["team"]["id"]
+            team_name = team["team"]["name"]
+            team_namecode = team["team"]["nameCode"]
+            temp = (team_id, team_name, team_namecode)
+            result.append(temp)
+        return result
+    
+    def fetch_teams_stats(self, season: int) -> list[tuple[int,int,int,int,int,int,int,int,int]]:
+        result = []
+        teams_json = self.get_response_json(get_teams_url, season)
+        teams = teams_json["standings"][6]["rows"]
+
+        for team in teams:
+            team_id = team["team"]["id"]
+            season_id = season
+            wins = team["wins"]
+            draws = team["draws"]
+            losses = team["losses"]
+            matches_played = wins + draws + losses
+            poins = team["points"]
+            scoresFor = team["scoresFor"]
+            scoresAgainst = team["scoresAgainst"]
+            temp = (team_id, season_id, matches_played, wins,losses, draws,  poins, scoresFor, scoresAgainst)
+            
+            result.append(temp)
+        return result
 
     def update_finished_matches_id(
         self, num_pages: int = 1, season_id: int = CURR_SEASON_ID
@@ -163,3 +194,25 @@ class Requests_handler:
         if response.status_code != 200:
             return None
         return response.json()
+
+    def fetch_odds(self,match_id: int) -> tuple[tuple[int,int,float,float,int],tuple[int,int,float,float,float,int]]:
+        odds_json = self.get_response_json(get_odds_url, match_id)
+        home_odds = (float(odds_json["markets"][0]["choices"][0]["initialFractionalValue"].split("/")[0])/float(odds_json["markets"][0]["choices"][0]["initialFractionalValue"].split("/")[1]))+1
+        away_odds = (float(odds_json["markets"][0]["choices"][1]["initialFractionalValue"].split("/")[0])/float(odds_json["markets"][0]["choices"][1]["initialFractionalValue"].split("/")[1]))+1
+        winning_bet_id = odds_json["markets"][0]["id"]
+        if odds_json["markets"][0]["choices"][0]["winning"] == True:
+            winning = 1
+        else:
+            winning = 2
+
+        goals_bet_id = odds_json["markets"][-1]["id"]
+        choice_group = float(odds_json["markets"][-1]["choiceGroup"])
+        over_odds = (float(odds_json["markets"][-1]["choices"][0]["initialFractionalValue"].split("/")[0])/float(odds_json["markets"][-1]["choices"][0]["initialFractionalValue"].split("/")[1]))+1
+        under_odds = (float(odds_json["markets"][-1]["choices"][1]["initialFractionalValue"].split("/")[0])/float(odds_json["markets"][-1]["choices"][1]["initialFractionalValue"].split("/")[1]))+1
+        if odds_json["markets"][-1]["choices"][0]["winning"] == True:
+            winning_g = 1
+        else:
+            winning_g = 2
+
+        return [(winning_bet_id,match_id,home_odds,away_odds,winning),
+                (goals_bet_id,match_id,choice_group,over_odds,under_odds,winning_g)]

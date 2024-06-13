@@ -15,6 +15,40 @@ class NHL_DB:
         self.cursor = self.connection.cursor(buffered=True)
         self.req_handler = Requests_handler()
 
+    def add_all_teams_to_db(self,season_id = CURR_SEASON_ID):
+        teams = self.req_handler.fetch_teams_data(season_id)
+
+        for team in teams:
+            self.cursor.execute(
+                "SELECT * FROM Teams WHERE teamID = (%s)", (team[0],)
+            )
+            if self.cursor.fetchone() != None:
+                print(f"Team {team[0]} is already in database!")
+            else:
+                print(f"Adding team {team[0]}")
+                self.cursor.execute(
+                    "INSERT INTO Teams values (%s,%s,%s)",
+                    team,
+                )
+        teams = self.req_handler.fetch_teams_stats(season_id)
+        for team in teams:
+            self.cursor.execute(
+                "SELECT * FROM TeamsStats WHERE teamID = (%s)", (team[0],)
+            )
+            if self.cursor.fetchone() != None:
+                print(f"Team {team[0]} is already in database!")
+            else:
+                print(f"Adding team {team[0]}")
+                self.cursor.execute(
+                    "INSERT INTO TeamsStats values (%s,%s,%s,%s,%s,%s,%s,%s,%s)",
+                    team,
+                )
+
+
+        self.connection.commit()
+
+
+
     def add_all_matches_to_db(self):
         self.add_upcoming_matches()
         self.add_finished_matches()
@@ -122,6 +156,7 @@ class NHL_DB:
             print(self.req_handler.upcoming_matches_id)
         else:
             print("Enter f/u")
+        self.add_all_matches_to_db()
 
     def update_seasons(self):
         seasons = self.req_handler.update_seasons()
@@ -137,3 +172,26 @@ class NHL_DB:
                     "INSERT INTO Seasons values (%s,%s,%s,%s)", season
                 )
         self.connection.commit()
+    
+    def update_odds(self, match_id):
+        odds_w, odds_g = self.req_handler.fetch_odds(match_id)
+        self.cursor.execute(
+            "SELECT * FROM winningTeamOdds WHERE matchID = (%s)", (match_id,)
+        )
+        if self.cursor.fetchone() != None:
+            print(f"Match {match_id} is already in database!")
+        else:
+            print(f"Adding odds for match {match_id}")
+            self.cursor.execute(
+                "INSERT INTO winningTeamOdds values (%s,%s,%s,%s,%s)",
+                odds_w,
+            )
+            self.cursor.execute(
+                "INSERT INTO matchgoalsOdds values (%s,%s,%s,%s,%s,%s)",
+                odds_g,
+            )
+        self.connection.commit()
+
+    def querry(self, querry):
+        self.cursor.execute(querry)
+        return self.cursor.fetchall()

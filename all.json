@@ -1,0 +1,89 @@
+{
+    "markets": [
+        {
+            "sourceId": 155480714,
+            "structureType": 1,
+            "marketId": 1,
+            "marketName": "Full time",
+            "isLive": false,
+            "fid": 155480716,
+            "suspended": false,
+            "id": 1799632244,
+            "choices": [
+                {
+                    "initialFractionalValue": "14/6",
+                    "fractionalValue": "10/10",
+                    "sourceId": 475674177,
+                    "name": "1",
+                    "winning": true,
+                    "change": -1
+                },
+                {
+                    "initialFractionalValue": "0/9",
+                    "fractionalValue": "11/3",
+                    "sourceId": 475674176,
+                    "name": "2",
+                    "winning": true,
+                    "change": 1
+                }
+            ]
+        },
+        {
+            "sourceId": 155480714,
+            "structureType": 2,
+            "marketId": 23,
+            "marketName": "1st period goals",
+            "choiceGroup": "1.5",
+            "isLive": false,
+            "fid": 155480724,
+            "suspended": false,
+            "id": 1799638243,
+            "choices": [
+                {
+                    "initialFractionalValue": "0/7",
+                    "fractionalValue": "4/9",
+                    "sourceId": 482062606,
+                    "name": "Over",
+                    "change": -1
+                },
+                {
+                    "initialFractionalValue": "19/3",
+                    "fractionalValue": "1/4",
+                    "sourceId": 482062607,
+                    "name": "Under",
+                    "change": 1
+                }
+            ]
+        },
+        {
+            "sourceId": 155480714,
+            "structureType": 2,
+            "marketId": 9,
+            "marketName": "Match goals",
+            "choiceGroup": "5.5",
+            "isLive": false,
+            "fid": 155480715,
+            "suspended": false,
+            "id": 1799638244,
+            "choices": [
+                {
+                    "initialFractionalValue": "0/10",
+                    "fractionalValue": "16/10",
+                    "sourceId": 475674174,
+                    "name": "Over",
+                    "winning": true,
+                    "change": 0
+                },
+                {
+                    "initialFractionalValue": "3/11",
+                    "fractionalValue": "3/8",
+                    "sourceId": 475674175,
+                    "name": "Under",
+                    "winning": false,
+                    "change": 0
+                }
+            ]
+        }
+    ],
+    "eventId": 12253333
+}
